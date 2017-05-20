@@ -26,9 +26,6 @@ if __name__ == '__main__':
             else:
                 img[xj,xi,2] = int(img[xj,xi,2]+100)            
 
-
-        #show the process
-        if xi%10==0 :print '.',
     cv2.namedWindow('img2')
     cv2.imshow('img2',img)
     cv2.waitKey()

@@ -1,9 +1,10 @@
 #coding=utf-8  
+
 import cv2  
 import numpy as np  
   
-image = cv2.imread("lena.bmp")  
- 
+# image = cv2.imread("lena.bmp")  
+image = cv2.imread("fan2.jpg")  
 lut = np.zeros(256, dtype = image.dtype )#创建空的查找表  
   
 hist,bins = np.histogram(image.flatten(),256,[0,256])   
